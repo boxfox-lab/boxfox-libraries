@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
+    "lib": ["dom", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true, 
+    "paths": {
+      "containers": ["src/containers/*"],
+      "components": ["src/components/*"],
+      "hooks": ["src/containers/editor/components/hooks/*"],
+      "utils": ["src/utils/*"],
+      "constants": ["src/constants/*"],
+      "remotes": ["src/remotes/*"],
+      "pages": ["src/pages/*"],
+      "models": ["src/models/*"]
+    }
+  }
+}

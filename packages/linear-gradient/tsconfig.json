@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "declaration": true,
+    "outDir": "../adaptive-linear-gradient/dist",
+    "skipLibCheck": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "sourceMap": false,
+    "strict": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "baseUrl": "../adaptive-linear-gradient",
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "lib": ["dom", "dom.iterable", "esnext"]
+  },
+  "include": ["../adaptive-linear-gradient/src"],
+  "exclude": ["../adaptive-linear-gradient/**/__mocks__/*", "../adaptive-linear-gradient/**/__tests__/*", "../adaptive-linear-gradient/**/__test__/*"]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@boxfox/adaptive-linear-gradient",
+  "version": "0.0.12",
+  "description": "adaptive-linear-gradient",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/esm",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.esm.json",
+    "deploy": "yarn build && yarn publish"
+  },
+  "peerDependencies": {
+    "@boxfox/react-native": ">=0.0.16",
+    "expo-linear-gradient": ">=9.2.0",
+    "react": ">=16.13.1",
+    "react-native-linear-gradient": ">=2.5.6"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.1",
+    "@types/react-native": "~0.63.2",
+    "expo-linear-gradient": "~9.2.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
+    "react-native-linear-gradient": "^2.5.6",
+    "typescript": "^4.2.4"
+  },
+  "publishConfig": {
+    "registry": "https://boxfox.bytesafe.dev/r/boxfox/"
+  }
+}

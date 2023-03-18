@@ -1,0 +1,32 @@
+{
+  "name": "@boxfox/logger",
+  "version": "0.0.22",
+  "description": "utils",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/esm",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.esm.json",
+    "deploy": "yarn build && yarn publish"
+  },
+  "dependencies": {
+    "@boxfox/core-hooks": "^1.0.14"
+  },
+  "peerDependencies": {
+    "@amplitude/react-native": ">=2.7.0",
+    "@react-navigation/core": ">6.0.1",
+    "react": ">=16.13.1"
+  },
+  "devDependencies": {
+    "@amplitude/react-native": "^2.7.0",
+    "@react-navigation/core": "^6.1.0",
+    "@types/amplitude-js": "^7.0.1",
+    "@types/react": "^17.0.1",
+    "@types/react-native": "~0.63.2",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
+    "typescript": "^4.2.4"
+  },
+  "publishConfig": {
+    "registry": "https://boxfox.bytesafe.dev/r/boxfox/"
+  }
+}

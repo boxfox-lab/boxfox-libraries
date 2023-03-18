@@ -1,0 +1,44 @@
+{
+  "name": "@boxfox/react-native",
+  "version": "0.0.89",
+  "description": "react-native",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/esm",
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json && tsc -p tsconfig.esm.json",
+    "deploy": "yarn build && yarn publish"
+  },
+  "dependencies": {
+    "@boxfox/bds-common": "^0.0.18",
+    "@boxfox/core-hooks": "^1.0.14",
+    "@boxfox/react-query": "^0.0.10"
+  },
+  "peerDependencies": {
+    "lottie-react-native": "^5.0.1",
+    "react": ">=16.13.1",
+    "react-native-heroicons": "^2.0.1",
+    "react-native-modal": "^13.0.0",
+    "react-native-reanimated": "~2.2.0",
+    "react-native-root-siblings": "^4.1.1",
+    "react-native-svg": "^12.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.40",
+    "@types/react-native": "~0.63.2",
+    "@types/styled-components-react-native": "^5.1.3",
+    "lottie-react-native": "^5.0.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
+    "react-native-heroicons": "^2.0.1",
+    "react-native-modal": "^13.0.0",
+    "react-native-reanimated": "~2.2.0",
+    "react-native-root-siblings": "^4.1.1",
+    "react-native-safe-area-context": "3.2.0",
+    "react-native-svg": "^12.1.1",
+    "styled-components": "^5.3.3",
+    "typescript": "^4.6.2"
+  },
+  "publishConfig": {
+    "registry": "https://boxfox.bytesafe.dev/r/boxfox/"
+  }
+}
