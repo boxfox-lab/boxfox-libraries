@@ -1,0 +1,18 @@
+{
+  "name": "@boxfox/url",
+  "version": "0.0.10",
+  "description": "url utils",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/esm",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.esm.json",
+    "deploy": "yarn build && yarn publish"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  },
+  "publishConfig": {
+    "registry": "https://boxfox.bytesafe.dev/r/boxfox/"
+  }
+}
